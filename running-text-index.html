@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mengambil font Montserrat resmi dari Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff; /* Latar belakang putih */
+            font-family: 'Montserrat', sans-serif;
+        }
+        .marquee-container {
+            width: 1336px;
+            height: 50px;
+            display: flex;
+            align-items: center; /* Teks otomatis di tengah secara vertikal */
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee-text {
+            display: inline-block;
+            padding-left: 1336px; /* Mulai muncul tepat dari ujung kanan box */
+            font-size: 18px; /* Ukuran proporsional untuk tinggi box 50px */
+            font-weight: 600;
+            color: #000000; /* Warna teks hitam */
+            /* Durasi 35 detik membuat teks berjalan lambat dan nyaman dibaca */
+            animation: marquee 35s linear infinite; 
+        }
+        @keyframes marquee {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee-text">
+            Lomba Agustusan di lingkungan Kementerian Ekonomi Kreatif dalam rangka menyemarakan Hari Ulang Tahun ke-81 Kemerdekaan Republik Indonesia tahun 2026 - Pantau terus informasi lomba pada situs ini
+        </div>
+    </div>
+</body>
+</html>
